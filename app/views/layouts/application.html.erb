@@ -8,9 +8,12 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render "shared/css" %>
   </head>
 
   <body>
+  <%= render "shared/preloader" %>
     <%= yield %>
+    <%= render "shared/js" %>
   </body>
 </html>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'dashboard', to: 'dashboard#index'
+  get 'dashboard/settings'
+  get 'dashboard/post'
   resources :articles
   root 'pages#home'
   get 'about', to: 'pages#about'
